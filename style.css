@@ -1,0 +1,199 @@
+:root{
+    --bg-header: url('img/bg-header.svg');
+    --grafica-destkop: url('img/grafica-destkop.svg');
+    --bg-circulo: url('img/bg-circulo.svg');
+
+    --grad-end: hsl(237, 17%, 21%);
+    --grad-start: hsl(237, 23%, 31%);
+
+    --Blue: hwb(208 12% 64%);
+    --Purple: hsl(237, 17%, 21%);
+    --Purple-900: hsl(237, 23%, 31%);
+    --Gray: hsl(207, 13%, 34%);
+}
+*{
+    margin: 0;
+    box-sizing: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Asegurar altura completa (degradado aplicado solo en secciones específicas) */
+html, body{
+    height: 100%;
+}
+
+body{
+    background: none;
+}
+header{
+    min-height: 25em;
+    background-color: #FE846D;
+    border-bottom-left-radius: 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-image: var(--bg-header), linear-gradient(90deg,#FF8A70, #FF5C5F);
+    background-repeat: no-repeat;
+    background-size: 160em auto;
+    background-position: 20% 50%;
+}
+.contenedor-navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 7rem 0 7rem;
+}
+.contenedor-opciones{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.contenedor-opciones ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.contenedor-opciones a{
+    text-decoration: none;
+    color: white;
+}
+.contenedor-descripcion-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Main */
+h1, h2{
+    color: var(--Blue);
+}
+/* p{
+    color: var(--Gray);
+} */
+.primer-contenedor-main{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+    padding: 10rem 0 0;
+/*     min-height: 0em;
+ */ place-items: center;
+    min-height: 500px;
+/*     border: 1px solid; */
+}.primer-contenedor-main h1{
+    position: relative;
+    top: 5rem;
+}
+/* primera section */
+.texto-primer-contenedor{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5rem;
+/*     border: 1px solid; */
+    padding-left: 12rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 15rem 4rem;
+    font-size: 15px;
+}
+.info p{
+    color: var(--Gray);
+}
+.bg-img-lado-derecho img{
+    position: relative;
+    left: 280px;
+    padding: 2rem 0 -15rem;
+    min-width: 1000px;
+}
+.bg-img-lado-derecho{
+    overflow-x: hidden;
+    position: relative;
+    top: -6rem;
+}
+/* segundo contenedor main */
+/* bg-imagen */
+.segundo-contenedor-main{
+    /* Degradado + imagen decorativa sobrepuesta */
+    background:url('img/bg-circulo.svg');
+    background-color: var(--Purple);
+    background-repeat: no-repeat,repeat;
+    background-position: left -12rem top -32rem;
+    padding-left: 12rem;
+    border-radius: 0em 4em;
+    height: 400px;
+}
+.contenedor-info-dos{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5rem;
+}
+.info-dos{
+    padding: 0 12rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+    padding: 6rem 0 0 0;
+}
+.segundo-contenedor-main h2{
+    color: white;
+}
+.contenedor-ilustracion-phones{
+    position: relative;
+    bottom: 5em;
+}
+/* tercera seccion */
+.tercer-seccion{
+    display: grid;
+    grid-template-columns: auto 3fr;
+    gap: 2rem;
+    padding: 10rem 0 0;
+    place-items: center;
+    min-height: 500px;
+}
+.texto-tercer-seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 15rem 4rem;
+    font-size: 15px;
+}
+.tercer-seccion img{
+    position: relative;
+    left: -280px;
+    padding: 2rem 0;
+}
+.texto-tercer-seccion{
+    max-width: 500px;
+    padding-left: 0;
+    font-size: 15px;
+    position: relative;
+    left: -300px;
+}
+.contenedor-footer{
+    background-color: var(--Purple);
+    color: var(--Gray);
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    padding: 2rem 7rem;
+    gap: 4rem;
+    border-top-right-radius: 4em;
+}
+.contenedor-footer nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.749);
+}
+.contenedor-footer nav ul span{
+    color: white;
+    padding: 0 0 1rem 0;
+    font-weight: bold;
+}
